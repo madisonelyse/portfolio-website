@@ -1,0 +1,93 @@
+/* Example of note format */
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 1.6;
+  color: #000000;
+}
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.0em;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+}
+h2 {
+  font-size: 2.0em;
+  font-weight: 550;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+}
+h3 {
+  font-size: 1.25em;
+  font-weight: 450;
+  text-transform: uppercase;
+}
+h4{
+  font-size: 1.0em;
+  font-weight: 350;
+}
+img {
+  width: 100%;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:visted {
+  color: #000000;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+a:active {
+  color: #adadad;
+}
+
+
+
+/*hyperlinks with the 'button' class --> keep at bottom so it doesn't get overwritten*/
+.button {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 8px;
+  border-radius: 2px;
+  border: 2px solid #000000;
+}
+.button:hover,
+.button:focus {
+  background-color: transparent;
+  color: #000000;
+  text-decoration: underline;
+  border: 2px solid #000000;
+}
+.button:active {
+  color: #adadad;
+}
+.button.contact {
+  background-color: transparent;
+  color: #000000;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+}
+.button.contact:hover,
+.button.contact:focus {
+  background-color: transparent;
+  color: #000000;
+  text-decoration: underline;
+}
+.button.contact:active {
+  color: #adadad;
+}
+
+.external.link {
+  font-weight: 400;
+}
