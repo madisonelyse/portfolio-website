@@ -14,14 +14,13 @@ body {
 }
 header {
   background-color: #ffffff;
-  text-align: center;
-  padding: 10px;
+  padding: 10px 0 4px;
   box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.25);
   position: fixed;
   width: 100%
 }
 main {
-  padding-top: 122px;
+  padding-top: 78px;
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -110,6 +109,7 @@ transition: 0.2s opacity;
 }
 
 
+
 /* Layout Styling */
 .container {
   padding: 0 15px;
@@ -146,14 +146,16 @@ transition: 0.2s opacity;
   text-align: center;
 }
 .logo {
-  max-width: 200px;
+  max-width: 175px;
 }
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
-nav > ul > li {
+nav {
   display: inline-block;
+  width: 100%;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -171,6 +173,34 @@ nav > ul > li > a:focus {
 }
 nav > ul > li > a:active {
   color: #adadad;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 20px;
+  padding-right: 0px;
+}
+.navtoggle, .navtoggle.responsive {
+  position: responsive;
+}
+.navtoggle.responsive li {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 @keyframes color-change {
   0% {fill: #edc655;}
@@ -232,6 +262,19 @@ MEDIUM DEVICES (640PX +)
     clear: both;
     display: table;
   }
+  nav > ul > li {
+    min-width: 641px;
+    display: inline-block;
+}
+nav > ul {
+  margin: 1em 0;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
 }
 /* ================================================
 LARGE DEVICES (1024PX +)
@@ -248,10 +291,41 @@ LARGE DEVICES (1024PX +)
   margin-left: auto;
   margin-right: auto;
 }
+.logo {
+  min-width: 641px;
+}
+nav > ul > li {
+  min-width: 641px;
+  display: inline-block;
+}
+nav > ul {
+  margin: 1em 0;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
 }
 /* ================================================
 EXTRA-LARGE DEVICES (1920PX +)
 ================================================= */
 @media only screen and (min-width: 1920px){
-
+  .logo {
+    min-width: 641px;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul > li {
+  min-width: 641px;
+  display: inline-block;
+}
+nav > ul {
+  margin: 1em 0;
+}
 }
